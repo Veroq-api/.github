@@ -29,6 +29,11 @@ print(swarm["synthesis"]["summary"])
 |-----------|-------------|
 | **Verified Swarm** | 5-agent pipeline — planner, researcher, verifier, critic, synthesizer |
 | **Agent Runtime** | Domain-specific verticals: finance, legal, research, compliance, custom |
+| **Verify Any Output** | Extract + verify claims from any LLM text — `POST /verify/output` |
+| **Agent Memory** | Per-agent persistent context — auto-enriches future queries |
+| **Real-Time Stream** | SSE push for ticker status, signal changes, claim updates — `GET /watch` |
+| **Verification Receipts** | Permanent public receipts with embeddable SVG badges and OG tags |
+| **Composable Recipes** | Marketplace agents run through Verified Swarm with trust scores |
 | **62 MCP Tools** | Every tool with WHEN TO USE, RETURNS, COST, EXAMPLE |
 | **Enterprise Safety** | Permission engine, decision lineage, escalation, audit trails |
 | **External MCP** | Securely proxy external APIs with trust levels and rate limits |
@@ -66,6 +71,10 @@ print(swarm["synthesis"]["summary"])
 - **`/verify`** — Evidence chains, confidence breakdown (4 factors), source reliability scores, verification receipts
 - **`/swarm/run`** — 5 verified agents coordinate on any query. Every step verified with decision lineage.
 - **`/runtime/run`** — Domain-specific pipelines with pre-configured safety rules per vertical
+- **`/verify/output`** — Extract + verify claims from any LLM text (5cr + 2/claim)
+- **`/memory/store`** + **`/memory/recall`** — Per-agent persistent context, auto-enriches `/ask`
+- **`/watch`** — Real-time SSE for ticker status, signal changes, confidence updates, claim invalidations
+- **`/verify/receipt/:id`** — Permanent public verification receipts with embeddable SVG badges
 - **1,061+ tickers** — equities, crypto, ETFs, commodities + auto-discovery
 - **200+ sources** across 18 categories
 - **300+ API endpoints** when you need granular control
