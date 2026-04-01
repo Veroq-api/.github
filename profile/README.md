@@ -1,8 +1,8 @@
 # VEROQ
 
-**The verified intelligence layer for AI agents.**
+**Verified AI. One function call.** Stop shipping hallucinations.
 
-Every claim fact-checked. Every output verified. Multi-agent pipelines for finance, legal, research, and compliance.
+`shield()` any LLM output. Every claim fact-checked with evidence chains. Multi-agent pipelines for finance, legal, research, and compliance.
 
 ```python
 pip install veroq
